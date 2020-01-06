@@ -16,7 +16,6 @@
     - [Procedural](#Procedural)
   - [The Post-MVP](#The-Post-MVP)
   - [The Presentation](#The-Presentation)
-  
 [GETTING STARTED](#GETTING-STARTED)
   - [STEP 1. Remember to Read All Directions](#STEP-1-Remember-to-Read-All-Directions)
   - [STEP 2. Choose Your Tzar](#STEP-2-Choose-Your-Tzar)
@@ -27,14 +26,11 @@
     - [STEP 5.1. Merging, For The Tzar](#STEP-51-Merging-For-The-Tzar)
   - [STEP 6. Get Hacking](#STEP-6-Get-Hacking)
     - [Getting Support](#Getting-Support)
-    
 [RESOURCES](#RESOURCES)
   - [ERD Modeling](#ERD-Modeling)
   - [Templates](#Templates)
   - [Relevant Guides](#Relevant-Guides)
-  
 [RECOMMENDATIONS](#RECOMMENDATIONS)
-
 [PLAGIARISM](#PLAGIARISM)
 
 ***
