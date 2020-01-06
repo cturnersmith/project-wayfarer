@@ -53,8 +53,6 @@ It is expected that team members will conduct themselves professionally througho
 
 ![teamwork makes the dream work](https://media.giphy.com/media/CvizJerMeqRTa/giphy.gif)
 
-<br>
-
 ## The MVP Requirements
 
 This project, like the others, will be a portfolio piece. For a portfolio piece to be complete, it **must** demonstrate an understanding of- and an ability to use- the tools and techniques introduced in this unit; it should be **functional with sufficient complexity**. This means that the project must meet the following requirements:
@@ -124,16 +122,12 @@ _* Unless it makes sense for that information to be restricted to particular use
 - Have _frequent_ commits from _every_ team member dating back to the _very beginning_ of the project.
 - Use _effective_ and _safe_ branching and merging processes.
 
-<br>
-
 ## The Post-MVP
 
 Achieve your MVP with time to spare? Try aiming for some stretch goals. (The following are not mandatory for your group Project app.)
 
 - Incorporate React component libraries for design and styling. (Instructors must sign off on this.)
 - Get input from a UX student on how to make your app have intuitive UI and design.
-
-<br>
 
 ## The Presentation
 
