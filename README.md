@@ -147,9 +147,7 @@ Finally, to get you familiar with multi-person presentations, the last requireme
 
 ## STEP 1. Remember to Read All Directions
 
-_WE REALLY WILL KNOW AND THIS ISN'T A JOKE_
-
-<br>
+_WE REALLY WILL KNOW AND WE ALL KNOW MISHA'S HILARIOUS BUT THIS ISN'T A JOKE_
 
 ## STEP 2. Choose Your Tzar
 
@@ -158,8 +156,6 @@ Pick one person on the team to be the "Git Tzar." This person will be responsibl
 ### STEP 2.1. Initializing, For The Tzar
 
 You will start by creating your project repository on your **personal** GitHub. Make the repository public. Restrict master branch merges using a _majority consent_ merge requirement. Add each of your teammates as collaborators.
-
-<br>
 
 ## STEP 3. Pitch Your Idea
 
