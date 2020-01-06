@@ -4,8 +4,7 @@
 
 **Your Full Stack React & Express Group Project**
 
-- [PROJECT 3](#PROJECT-3)
-  - [Overview](#Overview)
+ - [OVERVIEW](#Overview)
   - [The MVP Requirements](#The-MVP-Requirements)
     - [Planning](#Planning)
     - [Collaboration](#Collaboration)
