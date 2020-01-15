@@ -4,7 +4,7 @@
 
 **Your Full Stack React & Express Group Project**
 
-- [Overview](#Overview)
+- [OVERVIEW](#OVERVIEW)
   - [The MVP Requirements](#The-MVP-Requirements)
   - [The Post-MVP](#The-Post-MVP)
   - [The Presentation](#The-Presentation)
