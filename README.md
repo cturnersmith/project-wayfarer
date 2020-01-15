@@ -232,7 +232,7 @@ When you experience issues with your code, once again, you will need to use the 
 ## Templates
 
 - [Front End Project README Template](https://github.com/mishakessler/course-template/blob/master/templates/Template_Project-README.md)
-- [Full Stack Project README Template]()
+- [Full Stack Project README Template](https://git.generalassemb.ly/sei-nyc-cheetahs/class-info/wiki/Template_Full-Stack-Project-README)
 - [Group Project Team Expectations Template](https://docs.google.com/document/d/1TuvOuy0UQ42KGOza9IAGs8pkPfmoIlVP4Vj6OnJNGG4/edit?usp=sharing)
 - [Project Issue Ticket Template](https://github.com/mishakessler/course-template/blob/master/templates/Template_Project-Issue-Ticket.md)
 
