@@ -4,8 +4,7 @@
 
 **Your Full Stack React & Express Group Project**
 
-- [PROJECT 3](#PROJECT-3)
-  - [Overview](#Overview)
+- [Overview](#Overview)
   - [The MVP Requirements](#The-MVP-Requirements)
   - [The Post-MVP](#The-Post-MVP)
   - [The Presentation](#The-Presentation)
@@ -29,7 +28,7 @@
 
 <br>
 
-## Overview
+# OVERVIEW
 
 You’ve already worked in small groups to accomplish various labs and exercises, but, this time, **we’re going to challenge you to work on a whole project with a small team.** You will partner with a group of your peers to collaboratively design and build a full stack express/react app.
 
