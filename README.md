@@ -154,7 +154,12 @@ You will start by creating your project repository on your **personal** GitHub. 
 
 ## STEP 3. Set Team Expectations
 
-Your group should take at least 30 minutes to create a team expectations document
+Your group should take at least 30 minutes to create a team expectations document. This should include:
+
+1. **Timeline:** An overview of every day and when you will be hacking with your team.
+2. **Teammates:** Who's on the team, and your personal strengths and weaknesses.
+3. **Team Values:** Communication preferences, goals, values.
+4. **Team Practices:** Naming conventions, git branching practices, express routes.
 
 (Refer to the Resources section for the Group Project Team Expectations Template.)
 
