@@ -7,7 +7,7 @@
 - [OVERVIEW](#OVERVIEW)
   - [The MVP Requirements](#The-MVP-Requirements)
   - [The Post-MVP](#The-Post-MVP)
-  - [The Presentation](#The-Presentation)
+  - [The Presentation Requirements](#The-Presentation)
 - [GETTING STARTED](#GETTING-STARTED)
   - [STEP 1. Read All Insturctions](#STEP-1-Read-All-Insturctions)
   - [STEP 2. Choose Your Tzar](#STEP-2-Choose-Your-Tzar)
