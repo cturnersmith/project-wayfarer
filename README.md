@@ -4,28 +4,30 @@
 
 **Your Full Stack React & Express Group Project**
 
-* [OVERVIEW](#Overview)
-  * [The MVP Requirements](#The-MVP-Requirements)
-  * [The Post-MVP](#The-Post-MVP)
-  * [The Presentation](#The-Presentation)
-* [GETTING STARTED](#GETTING-STARTED)
-  * [STEP 1. Remember to Read All Directions](#STEP-1-Remember-to-Read-All-Directions)
-  * [STEP 2. Choose Your Tzar](#STEP-2-Choose-Your-Tzar)
+- [PROJECT 3](#PROJECT-3)
+  - [Overview](#Overview)
+  - [The MVP Requirements](#The-MVP-Requirements)
+  - [The Post-MVP](#The-Post-MVP)
+  - [The Presentation](#The-Presentation)
+- [GETTING STARTED](#GETTING-STARTED)
+  - [STEP 1. Read All Insturctions](#STEP-1-Read-All-Insturctions)
+  - [STEP 2. Choose Your Tzar](#STEP-2-Choose-Your-Tzar)
     - [STEP 2.1. Initializing, For The Tzar](#STEP-21-Initializing-For-The-Tzar)
-  * [STEP 3. Pitch Your Idea](#STEP-3-Pitch-Your-Idea)
-  * [STEP 4. Version Control](#STEP-4-Version-Control)
-  * [STEP 5. Project Management](#STEP-5-Project-Management)
-    - [STEP 5.1. Merging, For The Tzar](#STEP-51-Merging-For-The-Tzar)
-  * [STEP 6. Get Hacking](#STEP-6-Get-Hacking)
+  - [STEP 3. Set Team Expectations](#STEP-3-Set-Team-Expectations)
+  - [STEP 4. Pitch Your Idea](#STEP-4-Pitch-Your-Idea)
+  - [STEP 5. Version Control](#STEP-5-Version-Control)
+  - [STEP 6. Project Management](#STEP-6-Project-Management)
+    - [STEP 6.1. Merging, For The Tzar](#STEP-61-Merging-For-The-Tzar)
+  - [STEP 7. Get Hacking](#STEP-7-Get-Hacking)
     - [Getting Support](#Getting-Support)
-* [RESOURCES](#RESOURCES)
-  * [ERD Modeling](#ERD-Modeling)
-  * [Templates](#Templates)
-  * [Relevant Guides](#Relevant-Guides)
-* [RECOMMENDATIONS](#RECOMMENDATIONS)
-* [PLAGIARISM](#PLAGIARISM)
+- [RESOURCES](#RESOURCES)
+  - [ERD Modeling](#ERD-Modeling)
+  - [Templates](#Templates)
+  - [Relevant Guides](#Relevant-Guides)
+- [RECOMMENDATIONS](#RECOMMENDATIONS)
+- [PLAGIARISM](#PLAGIARISM)
 
-***
+<br>
 
 ## Overview
 
@@ -40,6 +42,8 @@ It is expected that team members will conduct themselves professionally througho
 - Make it work, and make it awesome.
 
 ![teamwork makes the dream work](https://media.giphy.com/media/CvizJerMeqRTa/giphy.gif)
+
+<br>
 
 ## The MVP Requirements
 
@@ -57,7 +61,7 @@ This project, like the others, will be a portfolio piece. For a portfolio piece 
 - Take time to pair program with teammates to reinforce learning.
 - Be prepared to explain sections of code that were written by teammates.
 
-### Front End
+### Client (Front End)
 
 - Have a working, interactice **React** app, built using `create react app`.
   - Have at least 6 separate, rendered components in an organized and understandable React file structure.
@@ -72,7 +76,7 @@ This project, like the others, will be a portfolio piece. For a portfolio piece 
 
 _* Unless it makes sense for that information to be restricted to particular users._
 
-### Back End
+### Server (Back End)
 
 - Have a **RESTful JSON API**.
   - Build an **Express** server, exposing RESTful JSON endpoints.
@@ -110,26 +114,34 @@ _* Unless it makes sense for that information to be restricted to particular use
 - Have _frequent_ commits from _every_ team member dating back to the _very beginning_ of the project.
 - Use _effective_ and _safe_ branching and merging processes.
 
+<br>
+
 ## The Post-MVP
 
 Achieve your MVP with time to spare? Try aiming for some stretch goals. (The following are not mandatory for your group Project app.)
 
 - Incorporate React component libraries for design and styling. (Instructors must sign off on this.)
+- Add another resource to your Express database.
 - Get input from a UX student on how to make your app have intuitive UI and design.
+
+<br>
 
 ## The Presentation
 
 Finally, to get you familiar with multi-person presentations, the last requirement:
 
-- Present your app to your cohort. Be sure to show it's functionality and features, including responsiveness. (Chrome Dev Tools' _Device Toolbar_ is helpul for this.)
+- Present your app to your cohort.
+- Each teammate should be responsible for an equal amount of the presentation.
 
 <br>
 
 # GETTING STARTED
 
-## STEP 1. Remember to Read All Directions
+## STEP 1. Read All Insturctions
 
-_WE REALLY WILL KNOW AND WE ALL KNOW MISHA'S HILARIOUS BUT THIS ISN'T A JOKE_
+_WE REALLY WILL KNOW, THIS ISN'T A JOKE_
+
+<br>
 
 ## STEP 2. Choose Your Tzar
 
@@ -139,35 +151,50 @@ Pick one person on the team to be the "Git Tzar." This person will be responsibl
 
 You will start by creating your project repository on your **personal** GitHub. Make the repository public. Restrict master branch merges using a _majority consent_ merge requirement. Add each of your teammates as collaborators.
 
-## STEP 3. Pitch Your Idea
+<br>
 
-Before you start coding away, your team must meet with instructors to get your idea approved. We will have 8 minute pitches in which you'll present your ideas. **Your team must have your idea prepared and written up in the repository's ReadMe file, including all of the following items, to get approved.**
+## STEP 3. Set Team Expectations
+
+Your group should take at least 30 minutes to create a team expectations document
+
+(Refer to the Resources section for the Group Project Team Expectations Template.)
+
+<br>
+
+## STEP 4. Pitch Your Idea
+
+Before you start coding away, your team must meet with instructors to get your idea approved. We will have 12 minute pitches in which your group will present your ideas. **Your team must have your idea prepared and written up in the repository's ReadMe file, including all of the following items, to get approved.** 
 
 1. **Title:** A working title for your app. (Feel free to have some fun with this.)
-2. **Description:** 4 to 5 sentences, in non-technical speak summarizing the features, functions, and goals.
-3. **MVP:** Your goals for MVP, including a feature list for the minimum, need-to-have features of the app.
-   1. **Wireframes:** Mockups of your app on desktop, tablet, and mobile.
-   2. **Component Heirarchy:** A visual tree of your components, depicting the parent/child relationships, as well as an indication of which will be class components, requiring state, and which will be functional components, taking props.
-   3. **Entity Relationship Diagram (ERD):** A diagram of the database tables, schemas, and relations. (Refer to the resources section for helpful links on ERD mapping.)
-   4. **API Endpoint Documentation:** A list of all of your servers routes, the structure of requests that you expect and the structure of responses they send.
-   5. **Dependencies:** A list of all libraries, frameworks, and packages you'll use.
-4. **Post-MVP:** Write out what your goals are for post-MVP, including nice-to-have features that you would like to implement once your MVP is complete.
-5. **SWOT Analysis:** Heading into project week, with all your planning and your groupmates in mind, consider your individual and group Strengths, Weaknesses, Opportunities, and Threats as they relate to your project.
+2. **Team Expectations**: A Google document or another markdown file covering timelines, communication preferences, code conventions, and more.
+3. **Overview:** 4 to 5 sentences, in non-technical speak summarizing the features, functions, and goals.
+4. **MVP:** Your goals for MVP, including a feature list for the minimum, need-to-have features of the app.
+   1. **Goals:** Overarching goals for your team's project.
+   2. **Libraries:** A list of all dependencies.
+   3. **Client:** Wireframes, component heirarchy, component breakdown, and component estimates.
+   4. **Server:** Data architecture and the ERD model. (Refer to the resources section for links to good ERD mapping sites.)
+5. **Post-MVP:** Your goals for post-MVP, including nice-to-have features that you would like to implement once your MVP is complete.
 
-## STEP 4. Version Control
+(Refer to the Resources section below for the Full Stack Project README Template.)
 
-Once your team's proposal is approved, confirm everyone on your team is running the same version of `node` and `npm` (`npm -v`, `node -v`). If you have differing versions, upgrade **only to the most recent version which your teammate has installed**.
+<br>
 
-## STEP 5. Project Management
+## STEP 5. Version Control
 
-- Create either a Trello board or a project board on your GitHub repository to prioritize and assign tasks. Common categories include `to do`, `in progress`, `done`, and/or `MVP to do` + `post-MVP to do`.
+Once your team's proposal is approved, confirm everyone on your team is running the same version of `node` and `npm` (`npm -v`, `node -v`). If you have differing versions, upgrade to the same versions.
+
+<br>
+
+## STEP 6. Project Management
+
+- Create either a Trello board or a project board on your GitHub repo to prioritize and assign tasks. Common categories include `to do`, `in progress`, `done`, and/or `new`, `now`, `next`, and `later`.
   - Each group member should choose or be assigned tasks.
   - Break features into small, focused tasks. If a task can be made more granular, create a new task card on the project board describing the sub-tasks.
     - Pick a name for your team. Write it down in a fun typography and draw a cheet@h doing something (SFW, please) next to your team name. This is your team's logo. Upload this to your project file before you pitch.
   - As work is done on a particular task, or if a feature is complete, report to your Git Tzar to merge your branch and begin work on a new task.
     - Move the task card from `To do` to `In progress` to `Ready` when the feature branch can be merged into master.
 
-### STEP 5.1. Merging, For The Tzar
+### STEP 6.1. Merging, For The Tzar
 
 (**This is VERY important to avoid merge conflicts. Pay attention.**)
 
@@ -178,17 +205,11 @@ Once your team's proposal is approved, confirm everyone on your team is running 
   4. Alert all teammates to a new merge and request they run a `git pull origin development` (or `master`) to get the most updated code on their local environment. (Merge conflicts are inevitable, but this makes sure they're small and manageable. DO THIS EVERY TIME YOUR MASTER IS UPDATED.)
   5. Before every subsequent merge, ensure your teammate has pulled the most updated team branch and resolved their conflicts.
 
-## STEP 6. Get Hacking
+<br>
 
-<!-- ### Remember what project week looks like?
+## STEP 7. Get Hacking
 
-Every morning and evening, squads will do standups, where each person will answer:
-
-1. What did you work on?
-2. What will you work on?
-3. What's something you expect will block your progress?
-
-After this, we'll go around the squad once more, indicating what "percent MVP" you are at with your project. -->
+Yay!
 
 ### Getting Support
 
@@ -206,7 +227,9 @@ When you experience issues with your code, once again, you will need to use the 
 
 ## Templates
 
-- [Project ReadMe Template](https://github.com/mishakessler/course-template/blob/master/templates/Template_Project-README.md)
+- [Front End Project README Template](https://github.com/mishakessler/course-template/blob/master/templates/Template_Project-README.md)
+- [Full Stack Project README Template]()
+- [Group Project Team Expectations Template](https://docs.google.com/document/d/1TuvOuy0UQ42KGOza9IAGs8pkPfmoIlVP4Vj6OnJNGG4/edit?usp=sharing)
 - [Project Issue Ticket Template](https://github.com/mishakessler/course-template/blob/master/templates/Template_Project-Issue-Ticket.md)
 
 ## Relevant Guides
