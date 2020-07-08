@@ -30,15 +30,7 @@
 
 # OVERVIEW
 
-You’ve already worked in small groups to accomplish various labs and exercises, but, this time, **we’re going to challenge you to work on a whole project with a small team.** You will partner with a group of your peers to collaboratively design and build a full stack express/react app.
-
 **This is meant to push you.** Working in a team can be more challenging than working by yourself, but it is highly likely that you will find yourself working in a collaborative environment in your first job post-graduation. **It's vital that you gain experience now, working together, setting expectations, communicating with your colleagues, and navigating team dynamics.**
-
-It is expected that team members will conduct themselves professionally throughout the project. If a group member's behavior undermines the effort of the group or violates the General Assembly Code of Conduct, they may be removed from the group. This will result in immediate disqualification for graduation. In light of this:
-
-- Strive for communication that is **A**ctionable, **S**pecific, and **K**ind.
-- Watch the [group bonding video](https://www.youtube.com/watch?v=J9OpTNk0hYc).
-- Make it work, and make it awesome.
 
 ![teamwork makes the dream work](https://media.giphy.com/media/CvizJerMeqRTa/giphy.gif)
 
@@ -62,31 +54,18 @@ This project, like the others, will be a portfolio piece. For a portfolio piece 
 
 ### Client (Front End)
 
-- Have a working, interactice **React** app, built using `create react app`.
+- Have a working, interactice **React** app.
   - Have at least 6 separate, rendered components in an organized and understandable React file structure.
   - Utilize functional and class React components appropriately.
   - Use _only_ React for DOM Manipulation.
-- Consume data from your **Express API**, and render that data in your components.
+- Consume data from the provided **Express API**, and render that data in your components.
 - Utilize **React Router**, for client-side routing.
 - Utilize Authentication, permitting the user to:
   - Register, login, and send authenticated requests.
-  - Perform `index` or `show` actions, **whether or not they are logged in**.*
-  - Perform `create`, `update`, and `delete` actions **when logged in**.
+  - Perform `index`, `show`, `create`, `update` and `delete` actions, **whether or not they are logged in**.
 
-_* Unless it makes sense for that information to be restricted to particular users._
-
-### Server (Back End)
-
-- Have a **RESTful JSON API**.
-  - Build an **Express** server, exposing RESTful JSON endpoints.
-  - Use **Express Router** to organize your route endpoints.
-  - Build a **PostgreSQL** database with at least 3 tables:
-    - 1 user table
-    - 2 other tables, of your choosing
-    - There must be at least 1 pair of associated tables. (one to many, many to many)
-  - Utilize **Sequelize** to define models for interacting with the database.
-  - Implement Authentication using **bcrypt** and **JWT**.
-  - Implement working generic controller actions for full-CRUD (`index`, `show`, `create`, `update`, `delete`) between the 2 non-user tables.
+*Strech Goal*
+-Have only certain routes available to logged in users (ie only allow logged in users the ability to create, update, or delete)
 
 ### Styling
 
@@ -102,11 +81,6 @@ _* Unless it makes sense for that information to be restricted to particular use
 - Remove unnecessary boilerplate React files and code.
 - Remove all `console.log()`s and commented out code (functional notes and comments are okay).
 
-### Deployment
-
-- Deploy the fully functional front-end via Surge.
-- Deploy the back-end via Heroku.
-
 ### Procedural
 
 - Initialize a **team git repo on Github**, with a link to your hosted project.
@@ -120,8 +94,7 @@ _* Unless it makes sense for that information to be restricted to particular use
 Achieve your MVP with time to spare? Try aiming for some stretch goals. (The following are not mandatory for your group Project app.)
 
 - Incorporate React component libraries for design and styling. (Instructors must sign off on this.)
-- Add another resource to your Express database.
-- Get input from a UX student on how to make your app have intuitive UI and design.
+- Have routes that require authentication (ie create, update, delete)
 
 <br>
 
@@ -176,16 +149,9 @@ Before you start coding away, your team must meet with instructors to get your i
    1. **Goals:** Overarching goals for your team's project.
    2. **Libraries:** A list of all dependencies.
    3. **Client:** Wireframes, component heirarchy, component breakdown, and component estimates.
-   4. **Server:** Data architecture and the ERD model. (Refer to the resources section for links to good ERD mapping sites.)
 5. **Post-MVP:** Your goals for post-MVP, including nice-to-have features that you would like to implement once your MVP is complete.
 
 (Refer to the Resources section below for the Full Stack Project README Template.)
-
-<br>
-
-## STEP 5. Version Control
-
-Once your team's proposal is approved, confirm everyone on your team is running the same version of `node` and `npm` (`npm -v`, `node -v`). If you have differing versions, upgrade to the same versions.
 
 <br>
 
@@ -215,26 +181,7 @@ Once your team's proposal is approved, confirm everyone on your team is running 
 
 Yay!
 
-### Getting Support
-
-When you experience issues with your code, once again, you will need to use the GitHub Issues tab. The Issue Ticket templates help you observe, research, and attempt to resolve your issue. If there's still no resolution, submit and slack the issue ticket your squad leader to reserve time to troubleshoot together.
-
-<br>
-
 # RESOURCES
-
-## ERD Modeling
-
-- [lucidchart](https://www.lucidchart.com/) This is a great tool for building ERDs.
-- [draw.io](https://www.draw.io/) Another great tool for ERDs.
-- [ERDPlus](https://erdplus.com/) Yet another great tool for ERDS.
-
-## Templates
-
-- [Front End Project README Template](https://github.com/mishakessler/course-template/blob/master/templates/Template_Project-README.md)
-- [Full Stack Project README Template](https://git.generalassemb.ly/sei-nyc-cheetahs/class-info/wiki/Template_Full-Stack-Project-README)
-- [Group Project Team Expectations Template](https://docs.google.com/document/d/1TuvOuy0UQ42KGOza9IAGs8pkPfmoIlVP4Vj6OnJNGG4/edit?usp=sharing)
-- [Project Issue Ticket Template](https://github.com/mishakessler/course-template/blob/master/templates/Template_Project-Issue-Ticket.md)
 
 ## Relevant Guides
 
