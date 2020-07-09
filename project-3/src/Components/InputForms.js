@@ -1,0 +1,113 @@
+// import React from 'react';
+
+// function InputForms(props) {
+//     return (
+//         <div>
+//         <form>
+//             <h2>Login</h2>
+//             <input type ="text" 
+//             name="username" 
+//             placeholder="username" 
+
+//             />
+//             <input type = "password" 
+//             name= "password" 
+//             placeholder="password" 
+//             />
+//             <input type = "submit" value="Submit" />
+//         </form>
+
+//             <form>
+//                 <h2>SignUp</h2>
+//                 <input type ="text" 
+//                 name="username" 
+//                 placeholder="username" 
+//                 />
+//                 <input type = "password" 
+//                 name= "password" 
+//                 placeholder="password" 
+//                 />
+//                 <input type = "password"
+//                 name="password"
+//                 placeholder="Confirm Password"
+//                 />
+//                 <input type ="submit" value="Submit" />
+
+    
+//             </form>
+//         </div>
+//     )
+// }
+
+
+// export default InputForms;
+
+
+
+import React, {Component} from 'react';
+
+class InputForms extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            username: "",
+            password: ""
+        }
+    }
+
+    handleChange = (e) => {
+        this.setState({
+            [e.target.name]: e.target.value
+        })
+    }
+
+    handleSubmit = (e) => {
+        this.setState({
+            [e.target.name]: e.target.value
+        })
+    }
+
+    render() {
+        return (
+            <div>
+        <form onSubmit={(e) => this.props.handleLogin(e, this.state)}>
+            <h2> Login </h2>
+            <input type = "text" 
+            name="username"
+            placeholder="UserName"
+            value={this.state.username}
+            onChange={this.handleChange}
+            />
+            <input 
+            type = "password"
+            name="password"
+            placeholder="Password"
+            value= {this.state.password}
+            onChange={this.handleChange}
+            />
+            <input type = "submit" value="LogIn" />
+        </form>
+
+        <form onSubmit ={(e) => this.props.handleSubmit(e, this.state)}>
+                <h3>SignUp</h3>
+                    <input type ="text" 
+                    name = "username" 
+                    placeholder="username" 
+                    />
+                    <input type = "password" 
+                    name= "password" 
+                    placeholder="password" 
+                    />
+                    <input type = "password"
+                    name="password"
+                    placeholder="Confirm Password"
+                    />
+                    <input type ="submit" value="Submit" onChange = {this.handleSubmit} />
+                    </form>
+            </div>
+        )
+    }
+}
+
+export default InputForms;
