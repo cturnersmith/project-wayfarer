@@ -4,8 +4,8 @@ function HomePage(props) {
     return(
 
         <div className = "HomePage">
-            <h1>Home</h1>
-            
+            <h1>Welcome to Wayfarar!</h1>
+            <p></p>
             
         </div>
 

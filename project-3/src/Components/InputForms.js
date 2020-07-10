@@ -76,34 +76,34 @@ class InputForms extends Component {
             <input type = "text" 
             name="username"
             placeholder="UserName"
-            value={this.state.username}
             onChange={this.handleChange}
             />
             <input 
             type = "password"
             name="password"
             placeholder="Password"
-            value= {this.state.password}
             onChange={this.handleChange}
             />
             <input type = "submit" value="LogIn" />
         </form>
 
-        <form onSubmit ={(e) => this.props.handleSubmit(e, this.state)}>
+        <form onSubmit ={(e) => this.props.handleInput(e, this.state)}>
                 <h3>SignUp</h3>
                     <input type ="text" 
                     name = "username" 
-                    placeholder="username" 
+                    placeholder="username"  
+                    onChange={this.handleChange}
                     />
                     <input type = "password" 
                     name= "password" 
                     placeholder="password" 
+                    onChange={this.handleChange}
                     />
                     <input type = "password"
                     name="password"
                     placeholder="Confirm Password"
                     />
-                    <input type ="submit" value="Submit" onChange = {this.handleSubmit} />
+                    <input type ="submit" value="Submit" />
                     </form>
             </div>
         )
