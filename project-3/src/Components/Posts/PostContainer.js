@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import { Route, withRouter } from 'react-router-dom';
-import {postPost, indexPosts, destroyPost, putPost} from '../../services/api_helper';
+import {postPost, indexCities, destroyPost, putPost} from '../../services/api_helper';
 
 import CreatePostForm from './CreatePostForm';
+import UpdatePostForm from './UpdatePostForm';
+import Cities from './Cities';
 import { render } from 'react-dom';
 
 class PostContainer extends Component {
@@ -24,13 +26,40 @@ createPost = async (e, postData) => {
     })
 }
 
+updatePost = async (event, id, values) => {
+    event.preventDefault();
+    const updatePost = await putPost (id, values);
+    const allPosts = this.state.posts;
+    const editedPosts = allPosts.map(post => {
+        return post.id === parseInt(id) ? updatePost: post
+    })
+    this.setState({
+        posts: editedPosts
+    })
+    this.props.history.push('/posts');
+}
 
+getCities = async () => {
+    console.log(allCities);
+    const allCities = await indexCities();
+        this.setState({
+            cities: allCities
+        })
+}
 
 render() {
     return(
     <div>
         <CreatePostForm handleSubmit={this.createPost} /> 
         
+        <Route path="/posts/:id/edit" render={(props) => {
+        return<UpdatePostForm
+        posts={this.state.posts}
+        updatePost={this.updatePost}
+        postId={props.match.params.id}
+        />
+    }} />
+    <Cities handleSubmit={this.getCities}/>
     </div>
 
     ) 

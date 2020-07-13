@@ -66,6 +66,8 @@ class App extends Component {
 
 
 
+
+
   
 
   render() {
@@ -110,6 +112,9 @@ class App extends Component {
       return <HomePage />
     }}  />
 
+<Route path = "/user/profile" render={() => {
+  return <EditProfile/>
+}} />
 
   
 

@@ -28,5 +28,16 @@ export const loginUser = async (loginData) => {
     console.log(newPost);
     return newPost;
   }
-   
+
+  export const putPost = async (id, postData) => {
+    const updatePost = await api.put(`/posts/${id}`, postData);
+    return updatePost.data;
+}
+
+export const indexCities = async () => {
+  const allCities = await api.get('/city');
+  console.log(allCities);
+  return allCities.data;
+}
+
   
