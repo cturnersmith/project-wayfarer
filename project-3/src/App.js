@@ -4,18 +4,19 @@ import './App.css';
 import InputForms from './Components/InputForms';
 import Profile from './Components/Profile';
 
-import { userSignup, loginUser, GetUserProfile} from './services/api_helper'; 
+import { userSignup, loginUser, GetUserProfile, updateProfile} from './services/api_helper'; 
 import {Route, Link, withRouter}  from 'react-router-dom';
 import Homepage from './Components/Homepage';
 import EditProfile from './Components/EditProfile';
 import PostContainer from './Components/Posts/PostContainer';
+import SinglePost from './Components/Posts/SinglePost';
 
 class App extends Component {
   constructor(props) {
     super(props);
 
     this.state= {
-      currentUser : null,
+      userProfile : null,
       loggedIn: false
 
       }
@@ -59,11 +60,22 @@ class App extends Component {
 
   handleLogout = (e) => {
     e.preventDefault();
+    localStorage.removeItem('authToken');
     this.setState({
-      loggedIn: false
+      loggedIn: false,
+      userProfile : null
     })
+    this.props.history.push('/');
   }
 
+  updateProfile = async (e, profile) => {
+    e.preventDefault();
+    const userProfile = await updateProfile(profile)
+    console.log(userProfile);
+    this.setState({
+      userProfile: userProfile
+    })
+  }
 
 
 
@@ -82,38 +94,44 @@ class App extends Component {
           <Link to="/">Home</Link>
           <br></br>
           {this.state.loggedIn && <Link to="/profile">Profile Page</Link>}
-          {this.state.loggedIn && <Link to="/home">Home</Link>}
+          {this.state.loggedIn && <Link to="/posts">Post</Link>}
           {this.state.loggedIn ? <button onClick={this.handleLogout}>Log Out</button>
           : <Link to="/login">SignUp/Login</Link>}
           </nav>
     </header>
 
       <div className="App" > 
+      
       <Route path = "/login" render= {() => {
         // console.log("hello");
-        return <InputForms handleInput={this.handleInput}
+          return <InputForms handleInput={this.handleInput}
         handleLogin={this.handleLogin} />
         }} />
       
     <Route path = "/profile" render={() => {
-      return <Profile user={this.state.userProfile} />
+      return <Profile user={this.state.userProfile} updateProfile = {this.updateProfile} />
       }}/>
     
-    <Route path = "/home" render={() => {
+    <Route path = "/posts" render={() => {
       return <PostContainer user={this.state.userProfile} />
       }} />
       
-
-      <Route path = "/" render={()=> {
+      {/* <Route path = "/" render={()=> {
         return <Homepage />
-        }} />
+        }} /> */}
+    <Route exact path = '/'><Homepage/></Route>
 
-<Route path = "/user/profile" render={() => {
-  return <EditProfile/>
-}} />
+ {/* <Route path = '/posts/:postid' render={() =>{
+        return <SinglePost />
+            }} /> */}
+
+    {/* <Route path = "/profile/:id/edit" render={() => {
+        return <EditProfile user = {this.state.userProfile}/>
+        }} /> */}
 
     </div>
-    );
+    </div>
+    )
   }
 }
 

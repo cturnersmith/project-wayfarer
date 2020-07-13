@@ -34,10 +34,26 @@ export const loginUser = async (loginData) => {
     return updatePost.data;
 }
 
-export const indexCities = async () => {
-  const allCities = await api.get('/city');
+  export const indexCities = async () => {
+  const allCities = await api.get('/city/all');
   console.log(allCities);
   return allCities.data;
+}
+
+export const destroyPost = async (id) => {
+  const deleteUser = await api.delete(`/posts/${id}`);
+  return deleteUser.data;
+}
+
+export const updateProfile = async (profile) => {
+  const updateProfile = await api.put('/user/profile', profile);
+  return updateProfile.data;
+}
+
+export const getCityPosts = async(cityId) =>{
+  const getCityPosts = await api.get(`/city/${cityId}`);
+  return getCityPosts.data;
+
 }
 
   
