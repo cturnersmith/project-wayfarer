@@ -12,12 +12,12 @@ function SinglePost(props) {
     
     console.log(currentPost);
     return(
-        <div>
+        <div className = "SinglePosts">
             
             {currentPost && currentPost[0] && (
                 <div>
             <h2> {currentPost[0].title}</h2>
-            <h4>{currentPost[0].body}</h4>
+            <h3>{currentPost[0].body}</h3>
             <p>{currentPost[0].img}</p>
             
         </div>

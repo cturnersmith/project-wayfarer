@@ -4,7 +4,7 @@ function UserPosts (props){
     return(
         <div>
             <h1>{props.posts.title}</h1>
-            <button onClick={() => props.destroyPost(props.posts.id)}>Delete</button>
+            <button id = "submit" onClick={() => props.destroyPost(props.posts.id)}>Delete</button>
         </div>
 
         )

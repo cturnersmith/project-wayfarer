@@ -50,11 +50,11 @@ class Profile extends Component {
                     placeholder="image" 
                     onChange={this.handleChange}
                     />
-                    <input type ="submit" value="Edit" />
+                    <input id="submit" type ="submit" value="Edit" />
                     </form>
                 
                 <br></br>
-                {posts}
+               <p>{posts}</p> 
               {/* <button onClick = {this.onClick}> Edit Profile</button>
                 {this.state.showComponent ? 
                 <EditProfile user={this.props.user} /> :

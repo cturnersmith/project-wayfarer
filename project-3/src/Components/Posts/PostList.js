@@ -11,7 +11,7 @@ class PostList extends Component {
 
     render() {
     return (
-        <div>
+        <div className= "SinglePosts">
             {this.props.cityId && <CreatePostForm handleSubmit={this.props.createPost} cityId={this.props.cityId} /> }
             {this.props.posts && this.props.posts.map(post => {
                 return <Link to={`/posts/${post.id}`}><h3>{post.title}</h3> </Link>

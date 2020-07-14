@@ -29,7 +29,7 @@ class InputForms extends Component {
             <h2 className="logintitle"> Login </h2>
             <input type = "text" 
             name="username"
-            placeholder="UserName"
+            placeholder="Username"
             onChange={this.handleChange}
             />
             <input 

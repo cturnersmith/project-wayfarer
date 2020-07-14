@@ -17,7 +17,7 @@ class CreatePostForm extends Component {
 }
     render() {
         return (
-            <div>
+            <div className = "Post-Container">
             <h2 className= "posts" >Create Post</h2>
         <form onSubmit={(e) => this.props.handleSubmit(e,this.state)}>
             <input type = "text" name="title" placeholder = "title" onChange={this.handleChange}/>
