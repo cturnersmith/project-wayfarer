@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Courgette&display=swap');
+
 .App {
   text-align: center;
 }
@@ -44,22 +47,106 @@
   position: relative;
 
 }
-.Title p {
+.Title h1 {
     
     font-size: 24px;
     font-weight: bold;
-    
-   
-
+    /* font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate; */
 }
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
 .Homepage ul {
   display: flex;
   justify-content: space-between;
+  
 }
 .Homepage p{
     border: 3pt solid black;
     display: flex;
     flex-direction: column;
     width: 25%;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.PageTitle {
+  font-size: 30px;
+
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 15px 0px 15px 0px;
+
+}
+
+.Link1, .Link2, .Link3,.Link4  {
+  font-size: 24px;
+  color: #e60073;
+  font-family: 'Chewy', cursive;
+
+  
+
+}
+
+.logoutButton, #submit, #login{
+  font-size: 20px;
+  color: #e60073;
+  background-color: rebeccapurple;
+  font-family: 'Chewy', cursive;
+
+}.Title h4 {
+  font-size: 80px;
+  margin: 25px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    font-family: 'Courgette', cursive;
     
+
+}
+.flex-container h1 {
+  font-size:30px;
+    color: rebeccapurple;
+    font-family: 'Chewy', cursive;
+  
+  
+}
+
+.flex-container img {
+  width: 360px;
+  height: 360px;
+}
+
+.posts, .logintitle, .signup {
+  font-size: 30px;
+  color: rebeccapurple;
+  font-family: 'Chewy', cursive;
+}
+
+.cities h1 {
+  font-size: 30px;
+  color: rebeccapurple;
+  font-family: 'Chewy', cursive;
+
+}
+
+#submit {
+
 }

@@ -4,7 +4,9 @@ import './App.css';
 import InputForms from './Components/InputForms';
 import Profile from './Components/Profile';
 
-import { userSignup, loginUser, GetUserProfile, updateProfile} from './services/api_helper'; 
+
+
+import { userSignup, loginUser, GetUserProfile, updateProfile, destroyPost} from './services/api_helper'; 
 import {Route, Link, withRouter}  from 'react-router-dom';
 import Homepage from './Components/Homepage';
 import EditProfile from './Components/EditProfile';
@@ -77,6 +79,15 @@ class App extends Component {
     })
   }
 
+  destroyPost = async (id) => {
+    console.log(id);
+    await destroyPost(id);
+    const loadedUser = await GetUserProfile();
+    this.setState({
+      userProfile: loadedUser})
+    
+}
+
 
 
 
@@ -87,16 +98,16 @@ class App extends Component {
   return (
     <div className = "Title"> 
       <img src ="https://image.freepik.com/free-vector/modern-city-night-landscape-neon-cartoon_1441-3157.jpg" 
-      alt="pic"/> <p>Wayfarer: Ladies Night Out</p>
+      alt="pic"/> <h4>Wayfarer: Ladies Night Out</h4>
 
     <header>
-          <nav>
-          <Link to="/">Home</Link>
+          <nav className = "nav">
+          <Link className = "Link1" to="/">Home</Link>
           <br></br>
-          {this.state.loggedIn && <Link to="/profile">Profile Page</Link>}
-          {this.state.loggedIn && <Link to="/posts">Post</Link>}
-          {this.state.loggedIn ? <button onClick={this.handleLogout}>Log Out</button>
-          : <Link to="/login">SignUp/Login</Link>}
+          {this.state.loggedIn && <Link className = "Link2" to="/profile">Profile Page</Link>}
+          {this.state.loggedIn && <Link className = "Link3" to="/posts">Post</Link>}
+          {this.state.loggedIn ? <button className ="logoutButton" onClick={this.handleLogout}>Log Out</button>
+          : <Link className = "Link4" to="/login">SignUp/Login</Link>}
           </nav>
     </header>
 
@@ -109,7 +120,7 @@ class App extends Component {
         }} />
       
     <Route path = "/profile" render={() => {
-      return <Profile user={this.state.userProfile} updateProfile = {this.updateProfile} />
+      return <Profile user={this.state.userProfile} updateProfile = {this.updateProfile} destroyPost = {this.destroyPost} />
       }}/>
     
     <Route path = "/posts" render={() => {
@@ -121,7 +132,7 @@ class App extends Component {
         }} /> */}
     <Route exact path = '/'><Homepage/></Route>
 
- {/* <Route path = '/posts/:postid' render={() =>{
+ {/* <Route  path = '/posts/:postid' render={() =>{
         return <SinglePost />
             }} /> */}
 

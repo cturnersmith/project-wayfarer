@@ -26,7 +26,7 @@ class InputForms extends Component {
         return (
             <div>
         <form onSubmit={(e) => this.props.handleLogin(e, this.state)}>
-            <h2> Login </h2>
+            <h2 className="logintitle"> Login </h2>
             <input type = "text" 
             name="username"
             placeholder="UserName"
@@ -38,26 +38,26 @@ class InputForms extends Component {
             placeholder="Password"
             onChange={this.handleChange}
             />
-            <input type = "submit" value="LogIn" />
+            <input id="login" type = "submit" value="Login" />
         </form>
 
         <form onSubmit ={(e) => this.props.handleInput(e, this.state)}>
-                <h3>SignUp</h3>
+                <h3 className="signup" >SignUp</h3>
                     <input type ="text" 
-                    name = "username" 
-                    placeholder="username"  
+                    name = "Username" 
+                    placeholder="Username"  
                     onChange={this.handleChange}
                     />
-                    <input type = "password" 
-                    name= "password" 
-                    placeholder="password" 
+                    <input type = "Password" 
+                    name= "Password" 
+                    placeholder="Password" 
                     onChange={this.handleChange}
                     />
                     <input type = "password"
                     name="password"
                     placeholder="Confirm Password"
                     />
-                    <input type ="submit" value="Submit" />
+                    <input id="submit" type ="submit" value="Submit" />
                     </form>
             </div>
         )

@@ -17,13 +17,24 @@ class PostContainer extends Component {
 
         this.state = {
             posts: [],
-            cityId: "1"
+            cityId: null,
+            cities: []
         }
     }
+//     getCities = async () => {
+//         const allCities = await indexCities();
+//             this.setState({
+//                 cities: allCities
+//             })
+//     }
+// componentDidMount(){
+//     this.getCities()
+// }
 
 createPost = async (e, postData) => {
-    e.preventdefault();
-    const newPost = await postPost(postData);
+    console.log(postData);
+    e.preventDefault();
+    const newPost = await postPost(this.state.cityId, postData);
     const posts = this.state.posts;
     posts.push(newPost.data);
     this.setState({
@@ -61,8 +72,7 @@ handleCityClick = async(cityId) => {
     const posts = await getCityPosts(cityId)
     this.setState({
         cityId: cityId,
-        posts:posts
-
+        posts:posts.Posts
 
     })
 }
@@ -72,7 +82,8 @@ handleCityClick = async(cityId) => {
 render() {
     return(
     <div>
-        {/* <CreatePostForm handleSubmit={this.createPost} /> 
+        {/* <CreatePostForm handleSubmit={this.createPost}
+        cities = {this.state.cities} />  */}
         
         <Route path="/posts/:id/edit" render={(props) => {
         return<UpdatePostForm
@@ -80,13 +91,17 @@ render() {
         updatePost={this.updatePost}
         postId={props.match.params.id}
         />
-    }} /> */}
+    }} />
     <Cities handleCityClick={this.handleCityClick}/>
-    <PostList posts={this.state.posts} />
-    {/* <Route path = '/posts/:postid' render={() =>{
-        return <SinglePost />
-            }} /> */}
-    {/* <SinglePost /> */}
+    <Route exact path = '/posts' render={() =>(
+        <PostList posts={this.state.posts} cityId={this.state.cityId} createPost={this.createPost} /> 
+    
+    )}/>
+
+    <Route path = '/posts/:id' render={(props) =>{
+        return <SinglePost
+        posts={this.state.posts} postId={props.match.params.id} />
+            }} /> 
     </div>
 
     ) 

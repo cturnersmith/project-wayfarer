@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import EditProfile from './EditProfile';
+import UserPosts from './UserPosts';
+import {destroyPost} from '../services/api_helper';
+import {withRouter} from 'react-router-dom';
 
 
 class Profile extends Component {
@@ -18,7 +21,15 @@ class Profile extends Component {
         })
       }
 
+     
+
     render () {
+      const posts = this.props.user.Posts.map(posts=>{
+        return <UserPosts posts={posts} destroyPost = {this.props.destroyPost}/>
+
+      })
+
+
         return(
             <div className="flex-container">
                 <h1>Profile Page</h1>
@@ -39,10 +50,11 @@ class Profile extends Component {
                     placeholder="image" 
                     onChange={this.handleChange}
                     />
-                    <input type ="submit" value="Submit" />
+                    <input type ="submit" value="Edit" />
                     </form>
                 
                 <br></br>
+                {posts}
               {/* <button onClick = {this.onClick}> Edit Profile</button>
                 {this.state.showComponent ? 
                 <EditProfile user={this.props.user} /> :
@@ -55,4 +67,4 @@ class Profile extends Component {
     
 }
 
-export default Profile;
+export default withRouter (Profile);

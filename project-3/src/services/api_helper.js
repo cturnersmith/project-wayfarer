@@ -23,8 +23,8 @@ export const loginUser = async (loginData) => {
       return userData.data;
   }
 
-  export const postPost = async(postData) => { 
-    const newPost = await api.post('/posts', postData);
+  export const postPost = async(id, postData) => { 
+    const newPost = await api.post(`/post/${id}`, postData);
     console.log(newPost);
     return newPost;
   }
@@ -41,7 +41,7 @@ export const loginUser = async (loginData) => {
 }
 
 export const destroyPost = async (id) => {
-  const deleteUser = await api.delete(`/posts/${id}`);
+  const deleteUser = await api.delete(`/post/${id}`);
   return deleteUser.data;
 }
 

@@ -5,7 +5,7 @@ function Homepage(props) {
 
         <div className = "Homepage">
             <h1>Welcome to Wayfarar!</h1>
-            <h2>Wayfarar: Ladies Night out</h2>
+            <h2 >Wayfarar: Ladies Night out</h2>
             <ul>    
                 
                 <p><h3>Topic</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
