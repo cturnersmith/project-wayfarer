@@ -21,15 +21,6 @@ class PostContainer extends Component {
             cities: []
         }
     }
-//     getCities = async () => {
-//         const allCities = await indexCities();
-//             this.setState({
-//                 cities: allCities
-//             })
-//     }
-// componentDidMount(){
-//     this.getCities()
-// }
 
 createPost = async (e, postData) => {
     console.log(postData);
@@ -82,9 +73,6 @@ handleCityClick = async(cityId) => {
 render() {
     return(
     <div>
-        {/* <CreatePostForm handleSubmit={this.createPost}
-        cities = {this.state.cities} />  */}
-        
         <Route path="/posts/:id/edit" render={(props) => {
         return<UpdatePostForm
         posts={this.state.posts}

@@ -23,18 +23,6 @@ class CreatePostForm extends Component {
             <input type = "text" name="title" placeholder = "title" onChange={this.handleChange}/>
             <input type = "text" name="body" placeholder="Enter Post Here" maxLength = "200" onChange={this.handleChange}/>
             <input id = "submit" type = "submit" value = "SubmitPost"/>
-            {/* <select >
-            {this.props.cities && this.props.cities.map(city => {
-                return <option value = {city.id}>{city.name}
-        
-                </option>
-            // return  <option onClick = {()=> 
-            //         this.props.handleCityClick(city.id)}>{city.name}
-            //         </option>
-        
-                // value = {this.state.cities} onChange={this.handleCityClick}>
-            })}
-            </select> */}
         </form>
         </div>
         )

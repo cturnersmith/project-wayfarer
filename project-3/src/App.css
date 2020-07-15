@@ -80,7 +80,7 @@
     flex-direction: column;
     width: 25%;
     padding-right:25px;
-    box-shadow: 12px 12px 2px 1px rgba(224, 51, 201, 0.822);
+    box-shadow: 12px 12px 2px 1px rgba(207, 95, 192, 0.822);
 }
 
 .PageTitle {
@@ -152,15 +152,11 @@
 
 }
 
-.SinglePosts h2{
+/* .SinglePosts h2{
   color: black;
 
-}
-/* body {
-  background-image: url('https://www.creativefabrica.com/wp-content/uploads/2020/04/09/Night-city-background-with-many-building-Graphics-3832769-1.jpg');  position: absolute;
- 
-
 } */
+
 
 .Homepage h1 {
   color: #e60073;
@@ -173,7 +169,9 @@
   flex-direction: column;
   align-items: flex-end;
   border: 3px solid pink;
-  margin: 50px;;
+  margin: 50px;
+  width: 35%;
+
 
 
   
@@ -185,8 +183,8 @@
   justify-content: space-around;
   align-items: flex-start;
   border: 3px solid pink;
-  width: 25%;
-  margin: 75px;
+  width: 35%;
+  margin: 87px 59px 26px 250px;
  
 }
 
@@ -194,9 +192,14 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin: 25px 50px 25px 50px;
+  margin: -781px 110px 8px 16px;
 }
 
 em{
   font-weight: bold;
+}
+
+a h3 {
+  color: black;
+  display: flex;
 }

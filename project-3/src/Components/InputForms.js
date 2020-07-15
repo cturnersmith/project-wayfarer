@@ -44,12 +44,12 @@ class InputForms extends Component {
         <form onSubmit ={(e) => this.props.handleInput(e, this.state)}>
                 <h3 className="signup" >SignUp</h3>
                     <input type ="text" 
-                    name = "Username" 
+                    name = "username" 
                     placeholder="Username"  
                     onChange={this.handleChange}
                     />
                     <input type = "Password" 
-                    name= "Password" 
+                    name= "password" 
                     placeholder="Password" 
                     onChange={this.handleChange}
                     />

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import EditProfile from './EditProfile';
 import UserPosts from './UserPosts';
-import {destroyPost} from '../services/api_helper';
 import {withRouter} from 'react-router-dom';
 
 
@@ -50,15 +48,18 @@ class Profile extends Component {
                     placeholder="image" 
                     onChange={this.handleChange}
                     />
+                      <input type = "text" 
+                    name= "city"
+                    value= {this.props.user.City}
+                    placeholder="Current City" 
+                    onChange={this.handleChange}
+                    />
                     <input id="submit" type ="submit" value="Edit" />
                     </form>
                 
                 <br></br>
                <p>{posts}</p> 
-              {/* <button onClick = {this.onClick}> Edit Profile</button>
-                {this.state.showComponent ? 
-                <EditProfile user={this.props.user} /> :
-                null } */}
+             
             </div>
         
         )
