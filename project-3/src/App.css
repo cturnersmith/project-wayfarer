@@ -52,12 +52,7 @@
     
     font-size: 24px;
     font-weight: bold;
-    /* font-size: 80px;
-    color: #fff;
-    text-align: center;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate; */
+    
 }
 
 @keyframes glow {
@@ -80,6 +75,7 @@
     flex-direction: column;
     width: 25%;
     padding-right:25px;
+    margin-right: 20px;
     box-shadow: 12px 12px 2px 1px rgba(207, 95, 192, 0.822);
 }
 
@@ -151,11 +147,6 @@
   font-family: 'Chewy', cursive;
 
 }
-
-/* .SinglePosts h2{
-  color: black;
-
-} */
 
 
 .Homepage h1 {
